@@ -8,7 +8,8 @@ Product_Sales_Predictor_api = Flask("Product Store Sales Predictor")
 
 # Load the trained sales prediction model
 # The model file is assumed to be in 'deployment_files/' relative to the container's /app directory
-model_path = "deployment_files/Product_Store_Sales_prediction_model_v1_0.joblib"
+# Corrected path assuming app.py is in /app/backend_files/ and model is in /app/deployment_files/
+model_path = "../deployment_files/Product_Store_Sales_prediction_model_v1_0.joblib"
 model = joblib.load(model_path)
 
 # Define a route for the home page
